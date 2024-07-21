@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from './theme';
-import GlobalStyle from './globalStyle';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Header from './Header';
-import Footer from './Footer';
+import theme from './src/theme';
+import GlobalStyle from './src/globalStyle';
+import Home from './src/Home';
+import About from './src/About';
+import Contact from './src/Contact';
+import Header from './src/Header';
+import Footer from './src/Footer';
 
 const App = () => (
   <ThemeProvider theme={theme}>
