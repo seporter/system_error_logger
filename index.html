@@ -20,12 +20,12 @@
         <h2>Project Team Hub</h2>
         
         <nav>
-            <a href="#home" class="futuristic-button" role="button" aria-label="Home"><span class="button-content">Home</span></a>
-            <a href="#project-overview" class="futuristic-button" role="button" aria-label="Project Overview"><span class="button-content">Project Overview</span></a>
-            <a href="#team-resources" class="futuristic-button" role="button" aria-label="Team Resources"><span class="button-content">Team Resources</span></a>
-            <a href="#development-tools" class="futuristic-button" role="button" aria-label="Development Tools"><span class="button-content">Development Tools</span></a>
-            <a href="#documentation" class="futuristic-button" role="button" aria-label="Documentation"><span class="button-content">Documentation</span></a>
-            <a href="#contact" class="futuristic-button" role="button" aria-label="Contact"><span class="button-content">Contact</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Home" onclick="openModal('home-modal')"><span class="button-content">Home</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Project Overview" onclick="openModal('project-overview-modal')"><span class="button-content">Project Overview</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Team Resources" onclick="openModal('team-resources-modal')"><span class="button-content">Team Resources</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Development Tools" onclick="openModal('development-tools-modal')"><span class="button-content">Development Tools</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Documentation" onclick="openModal('documentation-modal')"><span class="button-content">Documentation</span></a>
+            <a href="javascript:void(0)" class="futuristic-button" role="button" aria-label="Contact" onclick="openModal('contact-modal')"><span class="button-content">Contact</span></a>
         </nav>
         
         <div class="grid">
@@ -68,6 +68,14 @@
     </div>
     
     <!-- Modal content with fleshed-out details -->
+    <div id="home-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="home-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('home-modal')">&times;</span>
+            <h2 id="home-modal-title">Home</h2>
+            <p>Welcome to the Quantum Ticket Exchange POS Project Team Hub. Here, you will find all the resources, tools, and information needed for our groundbreaking project.</p>
+        </div>
+    </div>
+
     <div id="project-overview-modal" class="modal" aria-hidden="true">
         <div class="modal-content" role="dialog" aria-labelledby="project-overview-modal-title">
             <span class="close-modal" aria-label="Close modal" onclick="closeModal('project-overview-modal')">&times;</span>
@@ -156,11 +164,23 @@
             </ul>
         </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2023 Quantum Ticket Exchange | Project Team Hub</p>
-    </footer>
 
+    <div id="contact-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="contact-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('contact-modal')">&times;</span>
+            <h2 id="contact-modal-title">Contact</h2>
+            <p>Contact the project team for any inquiries or support needs.</p>
+            <ul>
+                <li><strong>Email:</strong> contact@quantumticketexchange.com</li>
+                <li><strong>Phone:</strong> +1-800-555-1234</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sci-fi-slogan">
+        <h2 class="slogan">"Revolutionizing the Future, One Quantum Leap at a Time"</h2>
+    </div>
+    
     <script src="assets/js/main.js"></script>
 </body>
 </html>
