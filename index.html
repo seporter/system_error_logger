@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Ticket Exchange POS - Project Team Hub</title>
+    <meta name="description" content="The Quantum Ticket Exchange POS Project Team Hub provides comprehensive resources and information for our cutting-edge quantum computing project.">
+    <meta name="keywords" content="Quantum Computing, Ticket Exchange, Project Management, Team Resources, POS System">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quantum-particles"></div>
+    <div class="nav-animation"></div>
+    
+    <div class="container">
+        <h1 id="quantum-ticket-exchange-pos" class="glow">Quantum Ticket Exchange POS</h1>
+        <h2>Project Team Hub</h2>
+        
+        <nav>
+            <a href="#home" class="futuristic-button" role="button" aria-label="Home"><span class="button-content">Home</span></a>
+            <a href="#project-overview" class="futuristic-button" role="button" aria-label="Project Overview"><span class="button-content">Project Overview</span></a>
+            <a href="#team-resources" class="futuristic-button" role="button" aria-label="Team Resources"><span class="button-content">Team Resources</span></a>
+            <a href="#development-tools" class="futuristic-button" role="button" aria-label="Development Tools"><span class="button-content">Development Tools</span></a>
+            <a href="#documentation" class="futuristic-button" role="button" aria-label="Documentation"><span class="button-content">Documentation</span></a>
+            <a href="#contact" class="futuristic-button" role="button" aria-label="Contact"><span class="button-content">Contact</span></a>
+        </nav>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Project Overview</h3>
+                <p>Get a comprehensive view of our Quantum Ticket Exchange POS project, including goals, timelines, and key milestones.</p>
+                <button onclick="openModal('project-overview-modal')" class="futuristic-button"><span class="button-content">Learn More</span></button>
+            </div>
+            
+            <div class="card">
+                <h3>Team Resources</h3>
+                <p>Access team collaboration tools, communication channels, and shared documents to streamline our workflow.</p>
+                <button onclick="openModal('team-resources-modal')" class="futuristic-button"><span class="button-content">Explore Resources</span></button>
+            </div>
+            
+            <div class="card">
+                <h3>Development Tools</h3>
+                <p>Find information about our development stack, coding standards, and tools we use for building the POS system.</p>
+                <button onclick="openModal('development-tools-modal')" class="futuristic-button"><span class="button-content">View Tools</span></button>
+            </div>
+            
+            <div class="card">
+                <h3>Documentation</h3>
+                <p>Access comprehensive documentation for the Quantum Ticket Exchange POS project, including API references and guides.</p>
+                <button onclick="openModal('documentation-modal')" class="futuristic-button"><span class="button-content">Read Docs</span></button>
+            </div>
+            
+            <div class="card">
+                <h3>Task Management</h3>
+                <p>Track project tasks, assign responsibilities, and monitor progress using our integrated task management system.</p>
+                <button onclick="openModal('task-management-modal')" class="futuristic-button"><span class="button-content">Manage Tasks</span></button>
+            </div>
+            
+            <div class="card">
+                <h3>Project Analytics</h3>
+                <p>View real-time project analytics, performance metrics, and progress reports to keep the team aligned.</p>
+                <button onclick="openModal('project-analytics-modal')" class="futuristic-button"><span class="button-content">See Analytics</span></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal content with fleshed-out details -->
+    <div id="project-overview-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="project-overview-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('project-overview-modal')">&times;</span>
+            <h2 id="project-overview-modal-title">Project Overview</h2>
+            <p>Our Quantum Ticket Exchange POS project aims to revolutionize the ticketing industry using cutting-edge quantum computing technology. Key features include:</p>
+            <ul>
+                <li>Instantaneous ticket processing</li>
+                <li>Quantum-secure transactions</li>
+                <li>AI-powered demand forecasting</li>
+            </ul>
+            <h3>Timeline:</h3>
+            <ul>
+                <li>Phase 1: Quantum algorithm development (Q2 2023)</li>
+                <li>Phase 2: POS interface design (Q3 2023)</li>
+                <li>Phase 3: Integration and testing (Q4 2023)</li>
+                <li>Launch: Q1 2024</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="team-resources-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="team-resources-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('team-resources-modal')">&times;</span>
+            <h2 id="team-resources-modal-title">Team Resources</h2>
+            <p>Access our team collaboration tools, including:</p>
+            <ul>
+                <li><strong>Slack:</strong> For team communication and instant messaging.</li>
+                <li><strong>Google Drive:</strong> Shared documents, spreadsheets, and presentations.</li>
+                <li><strong>Confluence:</strong> Wiki for documentation and knowledge sharing.</li>
+                <li><strong>Jira:</strong> Task and project management tool.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="development-tools-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="development-tools-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('development-tools-modal')">&times;</span>
+            <h2 id="development-tools-modal-title">Development Tools</h2>
+            <p>Our tech stack includes:</p>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, JavaScript</li>
+                <li><strong>Frameworks:</strong> Django, React</li>
+                <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>CI/CD:</strong> Jenkins, Docker</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="documentation-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="documentation-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('documentation-modal')">&times;</span>
+            <h2 id="documentation-modal-title">Documentation</h2>
+            <p>Our comprehensive documentation includes:</p>
+            <ul>
+                <li><strong>API Reference:</strong> Detailed information on API endpoints and usage.</li>
+                <li><strong>User Guides:</strong> Manuals and tutorials for end-users.</li>
+                <li><strong>Developer Guides:</strong> Coding standards, guidelines, and best practices.</li>
+                <li><strong>Architecture Docs:</strong> Overview of the system architecture and design decisions.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="task-management-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="task-management-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('task-management-modal')">&times;</span>
+            <h2 id="task-management-modal-title">Task Management</h2>
+            <p>Manage project tasks effectively:</p>
+            <ul>
+                <li><strong>Task Assignment:</strong> Assign and track responsibilities across the team.</li>
+                <li><strong>Progress Tracking:</strong> Monitor task completion and project milestones.</li>
+                <li><strong>Reporting:</strong> Generate reports on team performance and productivity.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="project-analytics-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="project-analytics-modal-title">
+            <span class="close-modal" aria-label="Close modal" onclick="closeModal('project-analytics-modal')">&times;</span>
+            <h2 id="project-analytics-modal-title">Project Analytics</h2>
+            <p>Stay informed with real-time analytics:</p>
+            <ul>
+                <li><strong>Performance Metrics:</strong> Key indicators of project and team performance.</li>
+                <li><strong>Data Visualization:</strong> Charts and graphs to visualize data trends.</li>
+                <li><strong>Custom Reports:</strong> Tailored reports for stakeholders and management.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Quantum Ticket Exchange | Project Team Hub</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
